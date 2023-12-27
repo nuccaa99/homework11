@@ -142,9 +142,44 @@ aside {
 /* cover section */
 
 .cover_section {
-    background-color: aqua;
     grid-area: COVER_SECTION;
+    background: url(../images/sofa_img.png);
+    display: flex;
+    align-items: flex-end;
 }
+
+.cover_section_content {
+    width: 100%;
+    background-color: var(--secondary-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cover_section_price {
+    color: var(--main-color);
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-p2);
+    line-height: 24px;
+    padding: 8px 0 8px 20px;
+}
+
+.cover_section_btn {
+    height: 40px;
+    border: none;
+    background: var(--secondary-color);
+    padding: 9px 50px 9px 51px;
+    color: var(--secondary-color-light);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: var(--font-weight-p3);
+    line-height: 22px;
+}
+
+
+
+
 
 .img_wrapper1 {
     background-color: blueviolet;
