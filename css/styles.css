@@ -179,16 +179,17 @@ aside {
 
 
 
-
+/* img 1 */
 
 .img_wrapper1 {
-    background-color: blueviolet;
     grid-area: IMG1;
+    background-color: var(--secondary-color-light);
 }
 
+/* img 1 */
 .img_wrapper2 {
-    background-color: red;
     grid-area: IMG2;
+    background-color: var(--secondary-color-light);
 }
 
 .card1 {
