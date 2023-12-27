@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
     --font-size-heading: 24px;
     --font-weight-heading: 700;
@@ -12,13 +14,16 @@
     --secondary-color: #C3B97F;
     --secondary-color-light: #DFD9D9;
     --opacity-color1: rgba(0, 0, 0, 0.20);
-    --opacity-color1: rgba(223, 217, 217, 0.40);
+    --opacity-color2: rgba(223, 217, 217, 0.40);
+    --font-family: 'Inter', sans-serif;
 }
 
+/* container */
 
 .container {
     width: min(100%, 1440px);
     margin: auto;
+    padding: 32px 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 48px 146px 146px 284px;
@@ -28,12 +33,71 @@
         "ASIDE COVER_SECTION COVER_SECTION IMG2"
         "CARD1 CARD2 CARD3 CARD4";
     gap: 48px 40px;
+    background-color: var(--main-color);
 }
 
+/* header */
+
 header {
-    background-color: #1c5550;
     grid-area: HEADER;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.header_list {
+    display: flex;
+    column-gap: 84px;
+}
+
+.item_link {
+    color: var(--main-color-light);
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header_right {
+    display: flex;
+    column-gap: 32px;
+}
+
+.input_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    border-radius: va(--border-radius);
+    border-radius: 4px;
+    width: 315px;
+    background: var(--opacity-color1);
+    box-shadow: 1.52px 3px 3px -0.8px var(--opacity-color1) inset, 0px -0.3px 1px 0px var(--opacity-color2) inset;
+}
+
+.input_wrapper span {
+    color: #91B599;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.user_btn,
+.cart_btn {
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    background: var(--opacity-color1);
+    box-shadow: 0px 2px 4px -2px var(--opacity-color2) inset, 0px 2px 4px 0px var(--opacity-color1);
+}
+
+
+/* aside */
 
 aside {
     background-color: yellow;
