@@ -1,0 +1,77 @@
+:root {
+    --font-size-heading: 24px;
+    --font-weight-heading: 700;
+    --font-size-p1: 18px;
+    --font-size-p2: 16px;
+    --font-weight-p2: 700;
+    --font-size-p3: 14px;
+    --font-weight-p3: 700;
+    --border-radius: 4px;
+    --main-color: #1c5550;
+    --main-color-light: #DFD9D9;
+    --secondary-color: #C3B97F;
+    --secondary-color-light: #DFD9D9;
+    --opacity-color1: rgba(0, 0, 0, 0.20);
+    --opacity-color1: rgba(223, 217, 217, 0.40);
+}
+
+
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 48px 146px 146px 284px;
+    grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "ASIDE COVER_SECTION COVER_SECTION IMG1"
+        "ASIDE COVER_SECTION COVER_SECTION IMG2"
+        "CARD1 CARD2 CARD3 CARD4";
+    gap: 48px 40px;
+}
+
+header {
+    background-color: #1c5550;
+    grid-area: HEADER;
+}
+
+aside {
+    background-color: yellow;
+    grid-area: ASIDE;
+}
+
+.cover_section {
+    background-color: aqua;
+    grid-area: COVER_SECTION;
+}
+
+.img_wrapper1 {
+    background-color: blueviolet;
+    grid-area: IMG1;
+}
+
+.img_wrapper2 {
+    background-color: red;
+    grid-area: IMG2;
+}
+
+.card1 {
+    grid-area: CARD1;
+    background-color: pink;
+
+}
+
+.card2 {
+    grid-area: CARD2;
+    background-color: pink;
+}
+
+.card3 {
+    grid-area: CARD3;
+    background-color: pink;
+}
+
+.card4 {
+    grid-area: CARD4;
+    background-color: pink;
+}
