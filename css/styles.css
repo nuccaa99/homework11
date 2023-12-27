@@ -154,6 +154,7 @@ aside {
 
 .cover_section_btn,
 .card_btn {
+    cursor: pointer;
     height: 40px;
     border: none;
     background: var(--secondary-color);
