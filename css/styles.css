@@ -148,7 +148,8 @@ aside {
     align-items: flex-end;
 }
 
-.cover_section_content {
+.cover_section_content,
+.card_content {
     width: 100%;
     background-color: var(--secondary-color-light);
     display: flex;
@@ -156,7 +157,8 @@ aside {
     justify-content: space-between;
 }
 
-.cover_section_price {
+.cover_section_price,
+.card_price {
     color: var(--main-color);
     font-size: 16px;
     font-family: var(--font-family);
@@ -166,16 +168,21 @@ aside {
 }
 
 .cover_section_btn {
+    padding: 9px 50px 9px 51px;
+}
+
+.cover_section_btn,
+.card_btn {
     height: 40px;
     border: none;
     background: var(--secondary-color);
-    padding: 9px 50px 9px 51px;
     color: var(--secondary-color-light);
     font-family: var(--font-family);
     font-size: 14px;
     font-weight: var(--font-weight-p3);
     line-height: 22px;
 }
+
 
 
 
@@ -192,23 +199,72 @@ aside {
     background-color: var(--secondary-color-light);
 }
 
+
+/* card section */
+
+.card1,
+.card2,
+.card3,
+.card4 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.card_img {
+    width: 320px;
+    height: 180px;
+    padding: 8px;
+}
+
+.one {
+    background: url(../images/card1.png);
+}
+
+.two {
+    background: url(../images/card2.png);
+}
+
+.three {
+    background: url(../images/card3.png);
+}
+
+.four {
+    background: url(../images/card4.png);
+}
+
+.card_img h3 {
+    color: var(--main-color);
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.card_txt {
+    color: var(--secondary-color-light);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card_btn {
+    padding: 9px 8px 9px 10px;
+}
+
 .card1 {
     grid-area: CARD1;
-    background-color: pink;
-
 }
 
 .card2 {
     grid-area: CARD2;
-    background-color: pink;
 }
 
 .card3 {
     grid-area: CARD3;
-    background-color: pink;
 }
 
 .card4 {
     grid-area: CARD4;
-    background-color: pink;
 }
