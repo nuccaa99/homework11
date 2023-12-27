@@ -1,0 +1,17 @@
+:root {
+    --font-size-heading: 24px;
+    --font-size-p1: 18px;
+    --font-size-p2: 16px;
+    --font-size-p3: 14px;
+    --font-weight-heading: 700;
+    --font-weight-p2: 700;
+    --font-weight-p3: 700;
+    --border-radius: 4px;
+    --main-color: #1c5550;
+    --main-color-light: #91B599;
+    --secondary-color: #C3B97F;
+    --secondary-color-light: #DFD9D9;
+    --opacity-color1: rgba(0, 0, 0, 0.20);
+    --opacity-color2: rgba(223, 217, 217, 0.40);
+    --font-family: 'Inter', sans-serif;
+}

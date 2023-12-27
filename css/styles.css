@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-:root {
-    --font-size-heading: 24px;
-    --font-weight-heading: 700;
-    --font-size-p1: 18px;
-    --font-size-p2: 16px;
-    --font-weight-p2: 700;
-    --font-size-p3: 14px;
-    --font-weight-p3: 700;
-    --border-radius: 4px;
-    --main-color: #1c5550;
-    --main-color-light: #91B599;
-    --secondary-color: #C3B97F;
-    --secondary-color-light: #DFD9D9;
-    --opacity-color1: rgba(0, 0, 0, 0.20);
-    --opacity-color2: rgba(223, 217, 217, 0.40);
-    --font-family: 'Inter', sans-serif;
-}
+@import url(variables.css);
 
 /* container */
 
@@ -53,7 +36,7 @@ header {
 .item_link {
     color: var(--secondary-color-light);
     font-family: var(--font-family);
-    font-size: 18px;
+    font-size: var(--font-size-p1);
     font-weight: 400;
 }
 
@@ -66,18 +49,16 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 8px 20px;
-    border-radius: va(--border-radius);
-    border-radius: 4px;
     width: 315px;
+    border-radius: var(--border-radius);
     background: var(--opacity-color1);
     box-shadow: 1.52px 3px 3px -0.8px var(--opacity-color1) inset, 0px -0.3px 1px 0px var(--opacity-color2) inset;
 }
 
 .input_wrapper span {
-    color: #91B599;
+    color: var(--main-color-light);
     font-family: var(--font-family);
-    font-size: 14px;
-    font-style: normal;
+    font-size: var(--font-weight-p3);
     font-weight: 400;
     line-height: normal;
 }
@@ -110,7 +91,7 @@ aside {
 .aside_title {
     color: var(--secondary-color);
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: var(--font-size-p2);
     font-weight: 400;
     line-height: 27px;
     margin-bottom: 16px;
@@ -126,7 +107,7 @@ aside {
 .list_item_link {
     color: var(--main-color-light);
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: var(--font-size-p3);
     font-weight: 400;
     line-height: 25px;
 }
@@ -160,7 +141,7 @@ aside {
 .cover_section_price,
 .card_price {
     color: var(--main-color);
-    font-size: 16px;
+    font-size: var(--font-size-p2);
     font-family: var(--font-family);
     font-weight: var(--font-weight-p2);
     line-height: 24px;
@@ -178,12 +159,10 @@ aside {
     background: var(--secondary-color);
     color: var(--secondary-color-light);
     font-family: var(--font-family);
-    font-size: 14px;
+    font-size: var(--font-size-p3);
     font-weight: var(--font-weight-p3);
     line-height: 22px;
 }
-
-
 
 
 /* img 1 */
@@ -236,15 +215,15 @@ aside {
 .card_img h3 {
     color: var(--main-color);
     font-family: var(--font-family);
-    font-size: 24px;
-    font-weight: 700;
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
     line-height: 32px;
 }
 
 .card_txt {
     color: var(--secondary-color-light);
     font-family: var(--font-family);
-    font-size: 16px;
+    font-size: var(--font-size-p2);
     font-weight: 400;
     line-height: 24px;
 }
